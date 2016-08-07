@@ -5,6 +5,11 @@
     ol{
         list-style-type: none;
     }
+    .navbarIcon{
+      width: 5%;
+      height: 48px;
+
+    }
     img{
       width: 500px;
       height: 500px;

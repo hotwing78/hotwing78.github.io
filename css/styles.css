@@ -20,7 +20,7 @@ header .mobile-menu-icon{
 	font-size: 3em;
 }
 
-header > img{
+#my-navbar > img{
 	width: 5%;
 	height: 50px;
 }

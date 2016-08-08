@@ -30,8 +30,12 @@
       height: 500px;
     }
     .carousel-container{
-      margin-left: 25em;
       width: 500px;
       height: 500px;
       margin: 30px;
+    }
+
+    .carousel-container > section{
+      margin-left: 25em;
+      width: 100%;
     }

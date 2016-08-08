@@ -5,11 +5,26 @@
     ol{
         list-style-type: none;
     }
+
+    #navbar-collapse > a{
+      margin-right: .5em;
+    }
+    #navbar-collapse > a:first-child{
+      margin-left: 29em;
+    }
     .navbarIcon{
       width: 5%;
       height: 48px;
-
+      background-color: #9e9e9e;
     }
+    .navbarIcon:hover{
+      background-color: #fff;
+    }
+
+    #feedback{
+      border-bottom: 1px solid gainsboro;
+    }
+
     img{
       width: 500px;
       height: 500px;

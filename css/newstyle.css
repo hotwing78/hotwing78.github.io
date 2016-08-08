@@ -35,7 +35,7 @@
       margin: 30px;
     }
 
-    .carousel-container > section{
+    #subContainer{
       margin-left: 25em;
       width: 100%;
     }

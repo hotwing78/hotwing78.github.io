@@ -21,13 +21,14 @@
       background-color: #fff;
     }
 
-    #feedback{
+    #feedbackContainer{
       border-bottom: 1px solid gainsboro;
     }
 
-    img{
-      width: 500px;
-      height: 500px;
+    .project{
+      width: 300px;
+      height: 300px;
+      margin-bottom: 100px;
     }
     .carousel-container{
       width: 500px;
@@ -35,6 +36,13 @@
       margin: 30px;
     }
 
+    .carousel-caption{
+      color:#e91e63;
+
+    }
+    .carousel-caption > p{
+      font-size: 1.3em;
+    }
     #subContainer{
       margin-left: 25em;
       width: 100%;

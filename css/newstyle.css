@@ -1,11 +1,13 @@
 
     body{
-        padding-top: 40px;
+      padding: 40px 20px 0 10px;
     }
     ol{
         list-style-type: none;
     }
-
+    #feedbackContainer{
+      border-bottom: 1px solid gainsboro;
+    }
     #navbar-collapse > a{
       margin-right: .5em;
     }
@@ -14,22 +16,13 @@
     }
     .navbarIcon{
       width: 5%;
-      height: 48px;
+      height: 50px;
       background-color: #9e9e9e;
     }
     .navbarIcon:hover{
       background-color: #fff;
     }
 
-    #feedbackContainer{
-      border-bottom: 1px solid gainsboro;
-    }
-
-    .project{
-      width: 300px;
-      height: 300px;
-      margin-bottom: 100px;
-    }
     .icons{
       widows: 50px;
       height: 50px;
@@ -37,7 +30,6 @@
     .carousel-container{
       width: 500px;
       height: 500px;
-      margin: 30px;
     }
 
     .carousel-caption{
@@ -47,7 +39,22 @@
     .carousel-caption > p{
       font-size: 1.3em;
     }
-    #subContainer{
-      margin-left: 25em;
-      width: 100%;
+     .item img{
+    width:100% !important;
+    height:350px !important;
+  }
+
+  #projects{
+    padding: 0;
+    width: 100%;
+  }
+
+    .inline{
+      display: inline-block;
+
+    }
+
+    .inline img{
+
+      margin-bottom: 5px;
     }

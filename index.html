@@ -1,34 +1,37 @@
 <!DOCTYPE html>
-<html ng-app = 'Portfolio'>
+<html ng-app='Portfolio'>
+
 <head>
     <title>Damon Wingo Wiki </title>
-      <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js"> </script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-      <link rel="stylesheet" type="text/css" href="css/newstyle.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="css/newstyle.css">
 </head>
 
 <body data-spy="scroll" data-target="#my-navbar">
 
-<!-- navbar -->
-    <nav class = "navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+    <!-- navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                    <span class = "icon-bar"></span>
-                    <span class = "icon-bar"></span>
-                    <span class = "icon-bar"></span>
-                    <span class = "icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
                 </button>
-                <a href=""class="navbar-brand">Wingowiki</a>
-            </div> <!-- end navbar-header -->
+                <a href="" class="navbar-brand">Wingowiki</a>
+            </div>
+            <!-- end navbar-header -->
             <div class="collapse navbar-collapse" id="navbar-collapse">
 
-            <a href="https://twitter.com/Cakolacblack" target="_blank"><img src="images/twitter_icon.png" alt="Damon Wingo Twitter" class = 'navbarIcon'></a>
-            <a href="https://github.com/hotwing78" target="_blank"><img src="images/github_icon.png" alt="Damon Wingo GitHub" class = 'navbarIcon'></a>
-            <a href="https://www.linkedin.com/in/damon-wingo-63b68b67" target="_blank"><img src="images/linkedin_icon.png" alt="Damon Wingo Twitter" class = 'navbarIcon'></a>
-            <a href ='https://codepen.io/dlwingo/' target="_blank"><img src='images/newCode.png' class= 'navbarIcon'></a>
+                <a href="https://twitter.com/Cakolacblack" target="_blank"><img src="images/twitter_icon.png" alt="Damon Wingo Twitter" class='navbarIcon'></a>
+                <a href="https://github.com/hotwing78" target="_blank"><img src="images/github_icon.png" alt="Damon Wingo GitHub" class='navbarIcon'></a>
+                <a href="https://www.linkedin.com/in/damon-wingo-63b68b67" target="_blank"><img src="images/linkedin_icon.png" alt="Damon Wingo Twitter" class='navbarIcon'></a>
+                <a href='https://codepen.io/dlwingo/' target="_blank"><img src='images/newCode.png' class='navbarIcon'></a>
 
                 <ul class="nav navbar-nav">
                     <li><a href="#feedback">What they say</a></li>
@@ -38,7 +41,8 @@
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </div>
-        </div><!--End Container-->
+        </div>
+        <!--End Container-->
     </nav>
 
     <!-- jumbotron -->
@@ -46,50 +50,53 @@
         <div class="container text-center">
             <h1>Damon Wingo</h1>
             <p>Software Engineer</p>
-        </div> <!-- End container text-center -->
-    </div> <!-- End jumbotron -->
-    <div id = "feedback"></div>
-    <div class="container-feedback">
-            <div class="pageheader" >
-                <h2>Feedback <small>Check out the AWESOME Feedback</small></h2>
+        </div>
+        <!-- End container text-center -->
+    </div>
+    <!-- End jumbotron -->
+
+    <div class="container-feedback" id='feedback'>
+        <div class="pageheader">
+            <h2>Feedback <small>Check out the AWESOME Feedback</small></h2>
+        </div>
+        <div class="row" id='feedbackContainer'>
+            <div class="col-md-4">
+                <blockquote>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+                    <footer>Damon Wingo</footer>
+                </blockquote>
             </div>
-            <div class="row" id = 'feedbackContainer'>
-                <div class="col-md-4">
-                    <blockquote>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                        </p>
-                        <footer>Damon Wingo</footer>
-                    </blockquote>
-                </div>
-                    <div class="col-md-4">
-                    <blockquote>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                        </p>
-                        <footer>Thomas Brady</footer>
-                    </blockquote>
-                </div>
-                    <div class="col-md-4">
-                    <blockquote>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
-                        </p>
-                        <footer>Alex Costelli</footer>
-                    </blockquote>
-                </div>
-            </div> <!-- end row -->
-    </div> <!-- end container-feedback -->
+            <div class="col-md-4">
+                <blockquote>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+                    <footer>Thomas Brady</footer>
+                </blockquote>
+            </div>
+            <div class="col-md-4">
+                <blockquote>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                    </p>
+                    <footer>Alex Costelli</footer>
+                </blockquote>
+            </div>
+        </div>
+        <!-- end row -->
+    </div>
+    <!-- end container-feedback -->
 
 
     <!-- Gallery -->
-    <div id="gallery"></div>
-    <div class="carousel-container">
-        <section id = 'subContainer'>
-            <div class="page-header" >
-                <h2>Live & Learn</br><small> I have a passion for furthering my knowledge in development</small></h2>
-            </div>
 
+    <div id="gallery">
+        <div class="carousel-container">
+            <div class="page-header">
+                <h2>Live & Learn</br><small> I have a passion for furthering my knowledge in software development</small></h2>
+            </div>
             <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
                 <ol class="carousel-inidicators">
                     <li class="active" data-target="#screenshot-carousel" data-slide-to="0"></li>
@@ -112,7 +119,8 @@
                             <h3>Iron Yard</h3>
                             <p>Successfully completed Iron Yard immersive Front End Engineering course</p>
                         </div>
-                    </div><!--  end of item -->
+                    </div>
+                    <!--  end of item -->
 
                     <div class="item">
                         <img src="images/Agile Cert.png" alt="Agile Scrum">
@@ -120,7 +128,8 @@
                             <h3>Agile</h3>
                             <p>Familiar with Agile Methods</p>
                         </div>
-                    </div><!--  end of item -->
+                    </div>
+                    <!--  end of item -->
 
                     <div class="item">
                         <img src="images/OOP Cert.png" alt="Object Oriented Programming">
@@ -128,7 +137,8 @@
                             <h3>OOP Methods</h3>
                             <p>A good understanding of OOP methodology</p>
                         </div>
-                    </div><!--  end of item -->
+                    </div>
+                    <!--  end of item -->
 
                     <div class="item">
                         <img src="images/Responsive Cert.png" alt="Responsive Design">
@@ -136,178 +146,172 @@
                             <h3>Responsive Design</h3>
                             <p>Making a practice of 'Mobile First' design</p>
                         </div>
-                    </div><!--  end of item -->
-                </div><!--  End carousel inner -->
-
-                <a href="#screenshot-carousel" class= "left carousel-control" data-slide="prev">
-                 <span class="glyphicon glyphicon-chevron-left"></span>
-                 </a>
-                <a href="#screenshot-carousel" class= "right carousel-control" data-slide="next">
-                 <span class="glyphicon glyphicon-chevron-right"></span>
-                 </a>
-            </div> <!-- end carousel slide -->
-        </section>
-    </div> <!-- end of carousel-container -->
-
-    <!-- Features -->
-    <div class="feature-container">
-        <section>
-            <div class="page-header" id="projects">
-                <h2>Projects<small> Some of my work</small></h2>
-            </div> <!-- end #features -->
-            <div class="row">
-                <div class= "col-sm-8">
-                    <h3>Mosey</h3>
-                    <p>  Technologies: AngularJs, Java, Gmaps, SASS, Foundation
-                         A web application that plans out activities for users in Charleston, SC based on locals’ recommendations.
-                   </p>
-                    <a href="https://github.com/hotwing78/Mosey" target="_blank"><img src="images/github_icon.png" alt=""class = 'icons'></a>
-                    <a href="https://mosey.surge.sh" target="_blank"><img src="images/sitelink.png" alt="Mosey link" class = 'icons'></a>
-                </div> <!-- end col-lg-8 -->
-
-                <div class="col-sm-4">
-                    <img src="images/Mosey.png" class="img-responsive project" alt="imac">
-                </div><!-- end col-md-4 -->
-            </div> <!-- end row -->
-
-             <div class="row">
-                <div class= "col-sm-8">
-                    <h3>UpDawwg</h3>
-                    <p>   Technologies: Javascript, Java, Angularjs
-                          A reddit style format  to place your favorite dog pics or gifs.
-                    </p>
-                      <a href="https://github.com/hotwing78/Updawwg" target="_blank"><img src="images/github_icon.png" alt=""class = 'icons'></a>
-                      <a href="https://updawwg.surge.sh" target="_blank"><img src="images/sitelink.png" alt="Updawwg link" class = 'icons'></a>
-                </div> <!-- end col-lg-8 -->
-                <div class="col-sm-4">
-                    <img src="images/UpDawwg.png" class="img-responsive project" alt="user">
-                </div><!-- end col-md-4 -->
-            </div> <!-- end row -->
-
-             <div class="row">
-                <div class= "col-sm-8">
-                    <h3>APPlied</h3>
-                    <p>
-                      Technologies: Underscore, JQuery 
-                      An application that helps keep track of jobs applied to and the contact information.
-                    </p>
-                      <a href="https://github.com/hotwing78/APPlied" target="_blank"><img src="images/github_icon.png" alt="" class = 'icons'></a>
-                      <a href="https://applied.surge.sh" target="_blank"><img src="images/sitelink.png" alt="Apply link" class = 'icons'></a>
+                    </div>
+                    <!--  end of item -->
                 </div>
-                <div class="col-sm-4">
-                    <img src="images/APPly.png" class="img-responsive project" alt="smartphone">
-                </div> <!-- end col-md-4 -->
-            </div> <!-- end row -->
+                <!--  End carousel inner -->
 
-            <hr>
+                <a href="#screenshot-carousel" class="left carousel-control" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a href="#screenshot-carousel" class="right carousel-control" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+            <!-- end carousel slide -->
+        </div>
+        <!-- end of carousel-container -->
+    </div>
+    <!-- Features -->
 
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="panel panel-default text-center">
-                        <div class="panerl-body">
-                           <span class="glyphicon glyphicon-ok text-center"></span>
-                            <h4>This is the Panel Heading</h4>
-                            <p>Bacon ipsum dolor amet pig salami shank short loin pork belly pastrami ham pork strip steak filet
-                                mignon frankfurter tri-tip brisket tongue.
-                            </p>
-                        </div> <!-- end panel body -->
-                    </div><!-- end panel -->
-                </div> <!-- end col -->
+    <div class = 'container' id="projects">
 
-                 <div class="col-sm-4">
-                 <div class="panel panel-default text-center">
-                        <div class="panel-body">
-                            <span class="glyphicon glyphicon-star text-center"></span>
-                            <h4>This is the Panel Heading</h4>
-                             <p>Bacon ipsum dolor amet pig salami shank short loin pork belly pastrami ham pork strip steak filet
-                                mignon frankfurter tri-tip brisket tongue.
-                            </p>
-                        </div> <!-- end panel body -->
-                    </div> <!-- end panel -->
-                </div> <!-- end col -->
+        <div class="page-header">
+            <h2>Projects<small> Some of my work</small></h2>
+        </div>
 
-                 <div class="col-sm-4">
-                    <div class="panel panel-default text-center">
-                        <div class="panel-body">
-                        <span class="glyphicon glyphicon-play-circle"></span>
-                        <h4>This is the Panel Heading</h4>
-                        <p>>Bacon ipsum dolor amet pig salami shank short loin pork belly pastrami ham pork strip steak filet
-                            mignon frankfurter tri-tip brisket tongue.
-                        </p>
-                        </div> <!-- end panel body -->
-                    </div><!-- end panel --><!-- end panel -->
-                </div> <!-- end col -->
-            </div><!--  end row -->
-        </section>
-    </div> <!-- end of feature container -->
-<div id="faq">  </div>
+        <div class="col-md-4 inline" id='mosey'>
+            <div class="col-sm-12">
+                <h3>Mosey</h3>
+                <p>
+                    <h4><b>Technologies: AngularJs, Java, Gmaps, SASS, Foundation</b></br></br>
+                         A web application that plans out activities for users in Charleston, SC based on locals recommendations.
+                       </h4>
+                </p>
+                <a href="https://github.com/hotwing78/Mosey" target="_blank"><img src="images/github_icon.png" alt="" class='icons'></a>
+                <a href="https://mosey.surge.sh" target="_blank"><img src="images/sitelink.png" alt="Mosey link" class='icons'></a>
+            </div>
+            <!-- end col-lg-8 -->
+
+
+            <img src="images/Mosey.png" class="img-responsive project" alt="imac">
+
+        </div>
+        <!-- end row -->
+
+        <div class="col-md-4 inline">
+            <div class="col-sm-12">
+                <h3>UpDawwg</h3>
+                <p>
+                    <h4><b> Technologies: Javascript, Java, Angularjs, SASS</b></br></br>
+                          A reddit style format to place your favorite dog pics or gifs to be voted on. How fine is your canine?
+                      </h4>
+                </p>
+                <a href="https://github.com/hotwing78/Updawwg" target="_blank"><img src="images/github_icon.png" alt="" class='icons'></a>
+                <a href="https://updawwg.surge.sh" target="_blank"><img src="images/sitelink.png" alt="Updawwg link" class='icons'></a>
+            </div>
+            <!-- end col-lg-8 -->
+
+            <img src="images/UpDawwg.png" class="img-responsive project" alt="user">
+
+        </div>
+        <!-- end row -->
+
+        <div class="col-md-4 inline">
+            <div class="col-sm-12">
+                <h3>APPlied</h3>
+                <p>
+                    <h4><b>Technologies: Underscore, JQuery, Gulp, SASS, Java</b></br></br>
+                      An application that helps keep track of jobs that have been applied to and the contacts
+                       at the applied company.
+                      </h4>
+                </p>
+                <a href="https://github.com/hotwing78/APPlied" target="_blank"><img src="images/github_icon.png" alt="" class='icons'></a>
+                <a href="https://applied.surge.sh" target="_blank"><img src="images/sitelink.png" alt="Apply link" class='icons'></a>
+            </div>
+
+            <img src="images/APPly.png" class="img-responsive project" alt="smartphone">
+
+        </div>
+        <!-- end row -->
+    </div> <!-- End of Projects -->
+
+
     <!-- FAQ -->
-    <div class="faq-container">
-        <section>
-            <div class="faq-header">
+    <div class="faq-container" id='faq'>
+
+            <div class="page-header">
                 <h2>FAQ</h2>
-            </div> <!-- end faq-header -->
+            </div>
+            <!-- end faq-header -->
 
             <div class="panel-group" id="accordion">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <a href="#collapse-1" data-toggle="collapse" data-parent="accordion">
-                        <div class="panel-title">
+                            <div class="panel-title">
 
                                 Why did you decide to become a developer?
 
-                        </div> <!--end panel-title-->
-                          </a>
+                            </div>
+                            <!--end panel-title-->
+                        </a>
                         <div id="collapse-1" class="panel-collapse collapse">
                             <div class="panel-body">
-                              <p>  &nbsp I initially wanted to do something with IT. Computers itself have always fascinated me but,</br>
+                                <p> &nbsp I initially wanted to do something with IT. Computers itself have always fascinated me but,</br>
                                     was turned on to code when I took my first class with my instructor Thomas Brady at Trident Tech.</br>
                                     When my first web page was built, the sense of accomplishment I felt at that point was phenomenal.</br>
                                     I have been addicted to that feeling ever since</p>
-                            </div><!--end panel-body-->
-                        </div> <!--end panel-collapse-->
-                    </div> <!--end panel-heading-->
-                </div> <!--end panel-default-->
+                            </div>
+                            <!--end panel-body-->
+                        </div>
+                        <!--end panel-collapse-->
+                    </div>
+                    <!--end panel-heading-->
+                </div>
+                <!--end panel-default-->
 
-                 <div class="panel panel-default">
+                <div class="panel panel-default">
                     <div class="panel-heading">
                         <div class="panel-title">
                             <a href="#collapse-2" data-toggle="collapse" data-parent="accordion">
                                 Question two?
                             </a>
-                        </div> <!--end panel-title-->
+                        </div>
+                        <!--end panel-title-->
                         <div id="collapse-2" class="panel-collapse collapse">
                             <div class="panel-body">
                                 Why Bacon? Why NOT!?
-                            </div><!--end panel-body-->
-                        </div> <!--end panel-collapse-->
-                    </div> <!--end panel-heading-->
-                </div> <!--end panel-default-->
+                            </div>
+                            <!--end panel-body-->
+                        </div>
+                        <!--end panel-collapse-->
+                    </div>
+                    <!--end panel-heading-->
+                </div>
+                <!--end panel-default-->
 
-                 <div class="panel panel-default">
+                <div class="panel panel-default">
                     <div class="panel-heading">
                         <div class="panel-title">
                             <a href="#collapse-3" data-toggle="collapse" data-parent="accordion">
                                 Question three?
                             </a>
-                        </div> <!--end panel-title-->
+                        </div>
+                        <!--end panel-title-->
                         <div id="collapse-3" class="panel-collapse collapse">
                             <div class="panel-body">
                                 Why Bacon? Why NOT!?
-                            </div><!--end panel-body-->
-                        </div> <!--end panel-collapse-->
-                    </div> <!--end panel-heading-->
-                </div> <!--end panel-default-->
-            </div> <!-- end panel group -->
-        </section>
+                            </div>
+                            <!--end panel-body-->
+                        </div>
+                        <!--end panel-collapse-->
+                    </div>
+                    <!--end panel-heading-->
+                </div>
+                <!--end panel-default-->
+            </div>
+          <!-- end panel group -->
+
     </div><!--  end FAQ-container -->
 
     <!-- Contact -->
-    <div class="contact-container">
-        <section>
-            <div class="page-header" id="contact">
-                <h2>Contact Me<small>  Contact me for more information</small></h2>
-            </div> <!-- end of #contact -->
+    <div class="contact-container" id='contact'>
+
+            <div class="page-header">
+                <h2>Contact Me</h2>
+            </div>
+            <!-- end of #contact -->
             <div class="row">
                 <div class="col-lg-4">
                     <p>Send us a message or contact us at the address below</p>
@@ -320,23 +324,26 @@
                     </address>
                 </div>
             </div>
-        </section>
-    </div> <!-- end of contact-container -->
+    </div>
+    <!-- end of contact-container -->
 
     <!-- Footer -->
     <footer>
         <div class="footer-container">
-             <div class="container text-center">
-                        <hr>
-                        <P>Check us out @</P>
-                    <ul class = "list-inline">
-                        <li><a href="https://twitter.com/Cakolacblack" target="_blank">Twitter</a></li>
-                        <li><a href="https://www.linkedin.com/in/damon-wingo-63b68b67" target="_blank">Linkedin</a></li>
+            <div class="container text-center">
+                <hr>
+                <P>Check me out @</P>
+                <ul class="list-inline">
+                    <li><a href="https://twitter.com/Cakolacblack" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.linkedin.com/in/damon-wingo-63b68b67" target="_blank">Linkedin</a></li>
 
-                    </ul>
+                </ul>
                 <p>&copy: Copyright 2016</p>
-                </div> <!--end container-->
-        </div> <!-- end footer-container -->
+            </div>
+            <!--end container-->
+        </div>
+        <!-- end footer-container -->
     </footer>
 </body>
+
 </html>

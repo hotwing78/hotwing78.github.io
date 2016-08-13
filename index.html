@@ -6,6 +6,7 @@
     <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <link rel="stylesheet" type="text/css" href="css/newstyle.css">
@@ -15,7 +16,7 @@
 
     <!-- navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
-        <div class="container">
+      <!--   <div class="container"> -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
                     <span class="icon-bar"></span>
@@ -41,7 +42,7 @@
                     <li><a href="#contact">Contact Me</a></li>
                 </ul>
             </div>
-        </div>
+        <!-- </div> -->
         <!--End Container-->
     </nav>
 
@@ -55,10 +56,12 @@
     </div>
     <!-- End jumbotron -->
 
-    <div class="container-feedback" id='feedback'>
+
+    <div class="container" id='feedback'>
         <div class="pageheader">
-            <h2>Feedback <small>Check out the AWESOME Feedback</small></h2>
+            <h2>Feedback</h2><h4>Check out the AWESOME Feedback</h4>
         </div>
+            <hr>
         <div class="row" id='feedbackContainer'>
             <div class="col-md-4">
                 <blockquote>
@@ -92,12 +95,12 @@
 
     <!-- Gallery -->
 
-    <div id="gallery">
+    <div id="gallery" class = 'container'>
+      <div class="page-header">
+          <h2>Live & Learn</h2><h4>I have a passion for furthering my knowledge in software development</h4>
+      </div>
         <div class="carousel-container">
-            <div class="page-header">
-                <h2>Live & Learn</br><small> I have a passion for furthering my knowledge in software development</small></h2>
-            </div>
-            <div class="carousel slide" id="screenshot-carousel" data-ride="carousel">
+            <div class="carousel slide col-md-6" id="screenshot-carousel" data-ride="carousel">
                 <ol class="carousel-inidicators">
                     <li class="active" data-target="#screenshot-carousel" data-slide-to="0"></li>
                     <li data-target="#screenshot-carousel" data-slide-to="1"></li>
@@ -159,28 +162,39 @@
                 </a>
             </div>
             <!-- end carousel slide -->
+            <div class = 'col-md-6' id = 'imgContainer'>
+              <p >
+              <h4>  "It is not the strongest that survives,</br>
+                     but the ones most responsive to change"</h4>
+              </p>
+                <img src="images/headshot.jpg" alt="..." id = 'galImage'>
+            </div>
         </div>
         <!-- end of carousel-container -->
+
     </div>
     <!-- Features -->
+        <hr>
 
-    <div class = 'container' id="projects">
+    <div class = 'container' id = 'projects'>
 
         <div class="page-header">
-            <h2>Projects<small> Some of my work</small></h2>
+            <h2>Projects</h2><h4>Some of my work</h4>
         </div>
 
         <div class="col-md-4 inline" id='mosey'>
             <div class="col-sm-12">
                 <h3>Mosey</h3>
-                <p>
-                    <h4><b>Technologies: AngularJs, Java, Gmaps, SASS, Foundation</b></br></br>
-                         A web application that plans out activities for users in Charleston, SC based on locals recommendations.
+              
+                    <h4><b>Technologies: AngularJs, Java, Gmaps, SASS</b></br></br>
+                        <p> A web application that plans out activities for users in Charleston, SC based on locals recommendations.
                        </h4>
                 </p>
                 <a href="https://github.com/hotwing78/Mosey" target="_blank"><img src="images/github_icon.png" alt="" class='icons'></a>
                 <a href="https://mosey.surge.sh" target="_blank"><img src="images/sitelink.png" alt="Mosey link" class='icons'></a>
+
             </div>
+
             <!-- end col-lg-8 -->
 
 
@@ -189,12 +203,12 @@
         </div>
         <!-- end row -->
 
-        <div class="col-md-4 inline">
+        <div class="col-md-4">
             <div class="col-sm-12">
                 <h3>UpDawwg</h3>
-                <p>
+
                     <h4><b> Technologies: Javascript, Java, Angularjs, SASS</b></br></br>
-                          A reddit style format to place your favorite dog pics or gifs to be voted on. How fine is your canine?
+                        <p>  A reddit style format to place your favorite dog pics or gifs to be voted on. How fine is your canine?
                       </h4>
                 </p>
                 <a href="https://github.com/hotwing78/Updawwg" target="_blank"><img src="images/github_icon.png" alt="" class='icons'></a>
@@ -210,9 +224,9 @@
         <div class="col-md-4 inline">
             <div class="col-sm-12">
                 <h3>APPlied</h3>
-                <p>
+
                     <h4><b>Technologies: Underscore, JQuery, Gulp, SASS, Java</b></br></br>
-                      An application that helps keep track of jobs that have been applied to and the contacts
+                    <p> An application that helps keep track of jobs that have been applied to and the contacts
                        at the applied company.
                       </h4>
                 </p>
@@ -224,14 +238,16 @@
 
         </div>
         <!-- end row -->
+
     </div> <!-- End of Projects -->
+        <hr>
 
 
     <!-- FAQ -->
-    <div class="faq-container" id='faq'>
+    <div class="container" id='faq'>
 
             <div class="page-header">
-                <h2>FAQ</h2>
+                <h2>FAQ's</h2>
             </div>
             <!-- end faq-header -->
 
@@ -248,10 +264,14 @@
                         </a>
                         <div id="collapse-1" class="panel-collapse collapse">
                             <div class="panel-body">
+                              <blockquote >
+
+
                                 <p> &nbsp I initially wanted to do something with IT. Computers itself have always fascinated me but,</br>
                                     was turned on to code when I took my first class with my instructor Thomas Brady at Trident Tech.</br>
                                     When my first web page was built, the sense of accomplishment I felt at that point was phenomenal.</br>
                                     I have been addicted to that feeling ever since</p>
+                                      </blockquote>
                             </div>
                             <!--end panel-body-->
                         </div>
@@ -263,15 +283,22 @@
 
                 <div class="panel panel-default">
                     <div class="panel-heading">
+                      <a href="#collapse-2" data-toggle="collapse" data-parent="accordion">
                         <div class="panel-title">
-                            <a href="#collapse-2" data-toggle="collapse" data-parent="accordion">
-                                Question two?
-                            </a>
+                                How would you handle a conflict with a team member?
                         </div>
+                          </a>
                         <!--end panel-title-->
                         <div id="collapse-2" class="panel-collapse collapse">
                             <div class="panel-body">
-                                Why Bacon? Why NOT!?
+                              <blockquote cite="http://">
+
+
+                                  I realize that not everyone are going to see eye to eye especially in software development, if I feel I am</br>
+                                right in a situation (this is on a technical issue of course) I would attempt to appeal to logic providing proven</br>
+                                facts and documentation on the matter. If there is still a disagreement I would seek a second opinion. There is no</br>
+                                development conflict that can't be solved calmly...besides all the best places to hide a body are taken.
+                                </blockquote>
                             </div>
                             <!--end panel-body-->
                         </div>
@@ -304,9 +331,10 @@
           <!-- end panel group -->
 
     </div><!--  end FAQ-container -->
+        <hr>
 
     <!-- Contact -->
-    <div class="contact-container" id='contact'>
+    <div class="container" id='contact'>
 
             <div class="page-header">
                 <h2>Contact Me</h2>
@@ -314,7 +342,7 @@
             <!-- end of #contact -->
             <div class="row">
                 <div class="col-lg-4">
-                    <p>Send us a message or contact us at the address below</p>
+                    <p>Send me a message</p>
 
                     <address>
                         <strong>Wingowiki Pvt Ltd</strong></br>
@@ -323,6 +351,13 @@
                         phone: 843-499-2740
                     </address>
                 </div>
+                <div class="col-lg-8">
+                  <a href="mailto:dlwingo@gmail.com?Subject=You're%20portfolio" target="_top"><img src="images/gmail_icon.png" alt="" class = 'icons'></a>
+                  <a href="https://github.com/hotwing78" target="_blank"><img src="images/github_icon.png" alt="" class = 'icons'></a>
+                  <a href="https://twitter.com/Cakolacblack" target="_blank"><img src="images/twitter_icon.png" alt="" class = 'icons'></a>
+                  <a href="https://www.linkedin.com/in/damon-wingo-63b68b67" target="_blank"><img src="images/linkedin_icon.png" alt="" class = 'icons'></a>
+                  <a href='https://codepen.io/dlwingo/' target="_blank"><img src='images/newCode.png' class = 'icons'></a>
+                </div>
             </div>
     </div>
     <!-- end of contact-container -->
@@ -330,13 +365,14 @@
     <!-- Footer -->
     <footer>
         <div class="footer-container">
-            <div class="container text-center">
+            <div class="text-center">
                 <hr>
                 <P>Check me out @</P>
                 <ul class="list-inline">
                     <li><a href="https://twitter.com/Cakolacblack" target="_blank">Twitter</a></li>
                     <li><a href="https://www.linkedin.com/in/damon-wingo-63b68b67" target="_blank">Linkedin</a></li>
-
+                    <li><a href='https://codepen.io/dlwingo/' target="_blank">Codepen</a></li>
+                    <li><a href="https://github.com/hotwing78" target="_blank">Github</a></li>
                 </ul>
                 <p>&copy: Copyright 2016</p>
             </div>

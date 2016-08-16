@@ -64,7 +64,8 @@ blockquote>footer {
 
 /* GALLERY */
 .carousel-caption {
-    color: #e91e63;
+    color: #5abc2a;
+    padding-bottom: 47%;
 }
 .carousel-caption> p {
     font-size: 1.3em;

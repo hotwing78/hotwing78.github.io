@@ -3,8 +3,7 @@
 
 <head>
     <title>Damon Wingo Wiki </title>
-    <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -14,15 +13,15 @@
 
 <body data-spy="scroll" data-target="#my-navbar">
 
+
     <!-- navbar -->
     <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
         <!--   <div class="container"> -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+            <button type="button" onclick = "myFunction(this)" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="icon-bar bar1 "></span>
+                <span class="icon-bar bar2 "></span>
+                <span class="icon-bar bar3 "></span>
             </button>
             <a href="" class="navbar-brand">Wingowiki</a>
         </div>
@@ -202,11 +201,16 @@
             </div>
             <!-- end carousel slide -->
             <div class='col-md-6' id='imgContainer'>
-                <p>
-                    <h4>  "It is not the strongest that survives,</br>
-                     but the ones most responsive to change"</h4>
-                </p>
-                <img src="images/headshot.jpg" alt="..." id='galImage'>
+                <div class="card">
+                    <img src="images/headshot.jpg" alt="..." id='galImage'>
+                    <div class="caption">
+                        <p>
+                            <h4>  "It is not the strongest that survives,</br>
+                                   but the ones most responsive to change"
+                            </h4>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- end of carousel-container -->
@@ -396,6 +400,7 @@
         </div>
         <!-- end footer-container -->
     </footer>
+    <script src = 'app.js'></script>
 </body>
 
 </html>

@@ -12,6 +12,30 @@ p {
 a {
     text-decoration: none !important;
 }
+.bar1, .bar2, .bar3{
+  width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-3px, 3px) ;
+    transform: rotate(-45deg) translate(-3px, 3px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
 
 #navbar-collapse> a:nth-child(4)> img {
     border: 1px solid #fff;
@@ -24,22 +48,27 @@ a {
 #navbar-collapse> a {
     margin-right: .5em;
 }
+
 #navbar-collapse> a:first-child {
     margin-left: 20em;
 }
+
 #imgContainer {
     max-height: 301px;
     width: 30%;
     display: inline-block;
     margin-left: 10%;
 }
+
 .navbarIcon {
     width: 5%;
     height: 50px;
 }
+
 .navbarIcon:hover {
     background-color: blue;
 }
+
 .icons {
     widows: 50px;
     height: 50px;
@@ -72,17 +101,31 @@ blockquote>footer {
 }
 #galImage {
     max-height: 30%;
-    width: 54.5%;
+    width: 100%;
+  -webkit-filter: grayscale(100%);
 }
 .item img {
     width: 100% !important;
     height: 350px !important;
+      -webkit-filter: grayscale(100%);
 }
 .inline {
     display: inline-block;
 }
 
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 65%;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
+
+.container {
+    padding: 2px 16px;
+}
 
 #projects .icons {
     margin-bottom: 5px;

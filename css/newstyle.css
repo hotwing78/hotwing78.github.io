@@ -85,9 +85,6 @@ i:hover {
 #navbar-collapse> a:nth-child(4)> img {
     border: 1px solid #fff;
 }
-#projects> div:nth-child(3)> div> a> img:hover {
-    background-color: #fff;
-}
 
 /*  NAVBAR     */
 
@@ -116,6 +113,15 @@ i:hover {
 }
 #Mosey {
     display: inline-block;
+}
+/*Projects*/
+.project{
+  display: inline-block;
+  margin-left: 10%;
+}
+
+#projects img{
+  vertical-align: top !important;
 }
 
 /*Feedback**/
@@ -183,7 +189,6 @@ blockquote>footer {
     background-color: blue;
 }
 
--A
 body>footer {
     background-color: #2d2d2d;
     color: #fff;
@@ -283,5 +288,8 @@ ul.tab li a:focus, .active {
 @media screen and (min-width: 425px) and (max-width: 767px) {
     #navbar-collapse> a> img {
         display: none;
+    }
+    .project{
+      margin: 0;
     }
 }

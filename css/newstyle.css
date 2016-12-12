@@ -45,6 +45,7 @@ i:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: 10px 10px 5px black;
 }
 .para-caption {
     position: relative;

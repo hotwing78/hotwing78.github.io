@@ -183,6 +183,11 @@ ul.tab li a:focus, .active {
 #feedbackContainer {
     border-bottom: 1px solid gainsboro;
 }
+
+blockquote{
+    height: 30rem;
+}
+
 blockquote>footer {
     color: #fff;
 }

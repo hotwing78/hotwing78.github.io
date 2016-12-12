@@ -191,7 +191,10 @@ blockquote{
 blockquote>footer {
     color: #fff;
 }
-
+/*FAQ*/
+.panel{
+    text-align: center;
+}
 /* GALLERY */
 
 .carousel-caption {

@@ -1,6 +1,6 @@
 :root{
   --navColor:#222 ;
-  --bodyColor: rgba(46,105,134,0.64);
+  --bodyColor:linear-gradient(135deg,rgba(85,239,203,1) 0%,rgba(30,87,153,1) 0%,rgba(85,239,203,1) 0%,rgba(91,202,255,1) 100%);/* rgba(46,105,134,0.64); */
   --font: 'Amitc SC';
 }
 *, *:before, *:after{
@@ -9,9 +9,8 @@
 }
 html{
   background: var(--bodyColor);
-  color: #3377C5;
+  color: white;
   font-family: var(--font), cursive;
-
 }
 
 ol,ul{
@@ -43,6 +42,7 @@ i{
   height: 60px;
   color: #3377C5;
   background-color: var(--navColor);
+  border-bottom: 1px solid black;
   transition: all 0.6s ease-in-out;
   width: 100%;
   font-size: 23px;
@@ -160,7 +160,7 @@ div.navlink a{
 
 .panel{
   border: 1px solid blue;
-  ox-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
+  box-shadow:inset 0 0 0 5px rgba(255,255,255,0.1);
   text-align: center;
   color:black;
   text-align: center;
@@ -232,7 +232,7 @@ div.navlink a{
   width: auto;
   margin-top: -22px;
   padding: 16px;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -308,6 +308,7 @@ div.navlink a{
     line-height: 50px;
     border-radius: 25px;
     background-color: #f1f1f1;
+    color: black;
 }
 
 .chip img {
@@ -365,7 +366,7 @@ div.navlink a{
 
 /* The Close Button */
 .close {
-    color: white;
+    color: black;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -380,26 +381,64 @@ div.navlink a{
 
 .modal-header {
     padding: 2px 16px;
-    background-color: var(--bodyColor);
+    background-color: rgba(91,202,255,1);
     color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+  padding: 2px 16px;
+  color:rgba(30,87,153,1);
+}
 
 .modal-footer {
     padding: 2px 16px;
-    background-color: var(--bodyColor);
+    background-color: rgba(91,202,255,1);
     color: white;
 }
 
 
 /* FAQ */
-button.accordion{
-  min-width: 50%;
+.button.accordion{
+  flex: 1 1 auto;
+ margin: 10px;
+ padding: 20px;
+ border: 2px solid #f7f7f7;
+ text-align: center;
+ text-transform: uppercase;
+ position: relative;
+ overflow:hidden;
+ transition: .3s;
+ background: transparent !important;
 }
+
+.button:after {
+  position: absolute;
+  transition: .3s;
+  content: '';
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
+  background: #f7f7f7;
+}
+
+.button:hover {
+  cursor: pointer;
+  border-top:0px;
+  border-right: 0px;
+  border-left: 0px;
+
+}
+.button:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+
 div.key {
     padding: 0 18px;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.06);
+    color: whitesmoke;
     max-height: 0;
     overflow: hidden;
     transition: 0.6s ease-in-out;
@@ -411,18 +450,10 @@ div.key.show {
     max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
 }
 
-button.accordion:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-}
 
-button.accordion.active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+.footer-container{
+  text-align: center;
 }
-
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -444,10 +475,10 @@ button.accordion.active:after {
 .clearfix{
   clear: both;
 }
-
+/*
 .active {
     background-color: #4CAF50;
-}
+} */
 
 .shadow{
   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.34);;

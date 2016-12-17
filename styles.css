@@ -209,6 +209,9 @@ div.navlink a{
 .panel2 { background-image:url(images/Apply.png); }
 .panel3 { background-image:url(images/UpDawwg.png); }
 .panel4 { background-image:url(images/Quirii.png); }
+.panel5 { background-image:url(images/AutoComplete.png); }
+.panel6 { background-image:url(images/DrumKit.png); }
+.panel7 { background-image:url(images/UserStyle.png); }
 
 /* Flex Items*/
 .panel > * {

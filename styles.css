@@ -1,7 +1,11 @@
 :root{
   --navColor:#222 ;
   --bodyColor:linear-gradient(135deg,rgba(85,239,203,1) 0%,rgba(30,87,153,1) 0%,rgba(85,239,203,1) 0%,rgba(91,202,255,1) 100%);/* rgba(46,105,134,0.64); */
-  --font: 'Amitc SC';
+  --font: 'Oranienbaum', cursive !important;
+  --fadeUp: 100px;
+  --fallDown: -200px;
+  --delay: 50ms;
+  --duration: 3s;
 }
 *, *:before, *:after{
   padding:0;
@@ -10,7 +14,7 @@
 html{
   background: var(--bodyColor);
   color: white;
-  font-family: var(--font), cursive;
+
 }
 
 ol,ul{
@@ -35,6 +39,10 @@ i{
   transition: all 0.5s;
 }
 
+.loaded {
+        opacity: 1;
+        transform: translateY(0);
+    }
 .header{
   position: fixed;
   top: 0;
@@ -132,7 +140,8 @@ div.navlink a{
 }
 
 .container-header > h2{
-  display: inline-block;;
+  display: inline-block;
+  font-family: 'Cutive Mono', monospace !important;
 }
 
 .container-header > i {
@@ -140,12 +149,20 @@ div.navlink a{
 }
 
 .para-caption {
-    position: relative;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
+  position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+   font-family: 'Cutive Mono', monospace;
+   letter-spacing: 4px;
+   font-size: 40px;
+   -webkit-font-smoothing: antialiased;
+}
 
+.bg2 .para-caption h1{
+  color: aqua;
+  font-size: x-large;
 }
 
 
@@ -176,6 +193,12 @@ div.navlink a{
   justify-content: center;
   display:flex;
   flex-direction: column;
+}
+
+.panel p{
+    font-family: 'Oranienbaum';
+    font-size: -webkit-xxx-large;
+    color: burlywood;
 }
 
 .panel > div > img{
@@ -450,7 +473,9 @@ div.key.show {
     max-height: 500px; /* Whatever you like, as long as its more than the height of the content (on all screen sizes) */
 }
 
-
+.contact-links a{
+  margin: 0 3%;
+}
 .footer-container{
   text-align: center;
 }

@@ -212,6 +212,7 @@ div.navlink a{
 .panel5 { background-image:url(images/AutoComplete.png); }
 .panel6 { background-image:url(images/DrumKit.png); }
 .panel7 { background-image:url(images/UserStyle.png); }
+.panel8 { background-image:url(images/HTMLCanvas.png); }
 
 /* Flex Items*/
 .panel > * {
@@ -229,6 +230,10 @@ div.navlink a{
 .panel.open-active > *:first-child { transform: translateY(0); }
 .panel > *:last-child { transform: translateY(100%); }
 .panel.open-active > *:last-child { transform: translateY(0); }
+
+.panel p{
+  text-shadow: #000 0px 0px 1px,   #000 0px 0px 1px,   #000 0px 0px 1px;
+}
 
 .panel.open {
   flex: 8;

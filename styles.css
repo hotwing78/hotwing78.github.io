@@ -455,7 +455,7 @@ div.navlink a{
 
 .button:hover {
   cursor: pointer;
-  border-top:20px;
+  border-top:0px;
   border-right: 0px;
   border-left: 0px;
 
